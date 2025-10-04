@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b2b26;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #6b9071;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  flex: 2;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form input[type="date"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f5a201;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #f5a201;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.actions button {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f5a201;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.actions button#filter-btn {
+  background-color: #375534;
+}
+
+.actions button#filter-btn:hover {
+  background-color: #1e7e34;
+}
+
+.actions button#delete-all-btn:hover {
+  background-color: #788d7c;
+}
+
+ul#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#todo-list li {
+  background: #e9ecef;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul#todo-list li div {
+  max-width: 80%;
+}
+
+ul#todo-list li strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+ul#todo-list li small {
+  color: #6c757d;
+}
+
+button.delete-btn {
+  background-color: #c3e956;
+  border: none;
+  color: #black;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button.delete-btn:hover {
+  background-color: #b02a37;
+}
